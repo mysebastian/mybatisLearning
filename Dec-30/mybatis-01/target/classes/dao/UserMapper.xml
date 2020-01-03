@@ -19,7 +19,7 @@
     select * from  mybatis.user;
   </select>
     <select id="selectUser" resultType="pojo.User" parameterType="int">
-        select * from mybatis.user where user.id=#{id}
+        select * from mybatis.user where id=#{id}
     </select>
     <select id="selectUserLike" resultType="pojo.User">
         select * from mybatis.user where name like "%"#{value}"%";
